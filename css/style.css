@@ -1,0 +1,399 @@
+
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  width: 320px;
+  height: 100%;
+}
+
+.header-grid_320{
+  display: flex;
+  align-self: center;
+  max-width: 320px;
+  color: #fff;
+}
+
+.header__title{
+  display: flex;
+  align-self: center;
+  font-size: 18px;
+  padding-left: 5px; 
+}
+
+.header {
+  display: flex;
+  height: 55px;
+  background-color: #000000;
+  position: relative;
+}
+
+.nav {
+  width: 100%;
+  box-shadow: inset 0 5px rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 100;
+  display: none;
+}
+
+.nav__link{
+  display: block;
+  height: 56px;
+  font-weight: bold;
+  color: #fff;
+  font-size: 14px;
+  line-height: 56px;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  background-color: #000000;
+  transition: background-color 0.1s linear, color 0.1s linear;
+}
+
+.nav__link:not(:first-of-type) {
+  border-top: 2px solid rgba(255, 255, 255, 0.2);
+}
+.nav__link:not(:last-of-type) {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+.nav__link:last-of-type {
+  box-shadow: inset 0 -5px 10px -5px rgba(0, 0, 0, 0.4);
+}
+.nav__link:hover {
+  background-color:  #404040;
+}
+.nav__link:active {
+  background-color: #1A37E4;
+  color: #fff;
+}
+.nav-menu {
+  display: block;
+  width: 25px;
+  height: 23px;
+  cursor: pointer;
+  color: transparent;
+  font-size: 0;
+  background: url("../img/icon-menu.svg") no-repeat;
+  position: absolute;
+  top: 16px;
+  right: 20px;
+  z-index: 1;
+}
+.nav-menu__checkbox {
+  display: none;
+}
+.nav-menu__checkbox:checked + .nav-burger {
+  background-image: url("../img/icon-cross.svg");
+}
+.nav-menu__checkbox:checked ~ .nav {
+  display: block;
+}
+
+
+.main-grid_320{
+  display: flex;
+  flex-direction: column;
+  max-width: 320px;
+}
+
+.block-main{
+  display: flex;
+  max-width: 320px;
+  margin: 0 auto;
+}
+
+.block-1{
+	display: flex;
+	max-width: 320px;
+    margin: 0 auto;
+}
+.block-main2{
+  display: flex;
+  max-width: 320px;
+  border: 1px solid;
+}
+.block-2{
+  display: flex;
+  flex-direction: row;
+  align-items:center;
+  justify-content: space-around;
+  margin: 10px;
+}
+
+.block-2__select{
+  padding: 10px;
+  color: grey;
+  background-color:whitesmoke;
+  border-radius: 2px;
+}
+
+.block-2__select:hover {
+  color: black; 
+}
+
+.block-main3{
+	max-width: 320px;
+    margin: 0 auto;
+	border: 1px solid black;
+}
+
+.block-3{
+  display: flex;
+  justify-content:space-around;
+  align-items:center;
+  flex-wrap: wrap;
+}
+
+.block-3 a{
+  margin: 10px;
+  color: black;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+.block-3__imagecard{
+	border: 1px solid black;
+	margin: 15px 0px;
+	
+}
+
+.block-3__imagecard_date{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin: 2px 4px;
+}
+
+.block-3__imagecard_date h4{
+  margin: 0 10px;
+  color: gray;
+}
+
+.block-3__imagecard_header{
+  margin: 0px 4px;
+}
+.block-main4{
+  width: 320px;
+  border: 1px solid black;
+}
+
+.block-4{
+  display: flex;
+  justify-content:center;
+  margin: 20px;
+}
+
+.block-4 a{
+  text-decoration: none;
+  color: aliceblue;
+}
+
+.block-4__button {
+	background-color: gray; 
+	padding: 10px; 
+	border-radius: 5px;
+	border: 2px solid black;
+} 
+
+.block-4__button:hover { 
+  background-color: blue; 
+}
+
+.block-main5{
+  max-width: 320px;
+  margin: 0 auto;
+  border: 1px solid black;
+    
+}
+
+.block-5{ 
+  display: flex;
+  justify-content:space-around;
+  align-items:center;
+  background-color:dimgrey;
+  height: 600px;
+}
+
+.block-5__imagecard{
+  border: 1px solid black;
+}
+
+.block-main6{
+  max-width: 320px;
+  border: 1px solid black;
+  background-image: url("../img/skateboarding-7.jpg");
+  background-size: cover;
+}
+
+.block-6{
+  display: flex;
+  justify-content: center;
+  border: 1px solid black;
+  background: rgba(255,255,255, 0.7);
+}
+
+.block-6__header{
+  margin: 10px 0;  
+}
+
+.block-6__header h3{
+  display: flex;
+  justify-content: center;
+}
+
+.block-7{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  background: rgba(255,255,255, 0.7);
+}
+.block-7info__info{
+	display: flex;
+	justify-content: center;
+}
+
+.block-7info{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-wrap: wrap;
+  max-width: 320px;
+  border: 1px solid black;
+}
+
+.block7info__button{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 20px;
+}
+
+.block7info__button button{
+  background-color: gray; 
+	padding: 10px; 
+	border-radius: 5px;
+	border: 2px solid black;
+}
+
+.block7info__button button:hover { 
+  background-color: blue; 
+}
+
+.block7info__button button a{
+  color: wheat;
+  text-decoration: none;
+}
+
+.block-main7{
+  max-width: 320px;
+  border: 1px solid black;
+}
+
+.block-8{
+  max-width: 320px;
+  display: flex;
+  justify-content: center;
+}
+
+aside a{
+  margin: 10px;
+  color: aliceblue;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.aside3{
+  width: 320px;
+  background-color: dimgray;
+  border: 1px solid black;
+}
+
+.aside-block3{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 25px;
+}
+
+.aside-block3__header h2{
+  font-size: 20px;
+  color: darkslategrey;
+}
+
+.aside-block3__header h1{
+  font-size: 40px;
+  color: aliceblue;
+}
+
+.aside-block3__header h3{
+	margin: 10px 0;
+  color: aliceblue;
+}
+
+.aside-block3__header hr{
+  width: 150px;
+  height: 2px;
+  background-color: aliceblue;
+  margin: 0;
+}
+
+.aside-block3__info{
+  color: aliceblue;
+}
+
+.aside-block3__link {
+  color: white;
+  margin: 20px 0;
+}
+
+.footer{
+  flex-shrink: 0;
+  flex-grow: 0;
+  flex-basis: auto;
+  background-color: #000000;
+  border: 1px solid red;
+}
+
+.footer-grid_320{
+  display: flex;
+  max-width: 320px;
+  justify-content: space-between;
+ 
+}
+
+
+
+.footer-logo{
+  align-self: center;
+  margin-right: 25px;
+}
+
+.email{
+  /*margin: 0px  5px 0px 15px;*/
+  align-self: center;
+}
+
+.footer-social{
+  align-self: center;
+  padding-left: 2px;
+}
+
+.social__icons{
+  margin: 3px 3px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align:bottom;
+}
