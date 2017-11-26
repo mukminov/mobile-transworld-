@@ -91,11 +91,11 @@
 .nav-menu__checkbox {
   display: none;
 }
-.nav-menu__checkbox:checked + .nav-burger {
+.nav-menu__checkbox:checked + .nav-menu {
   background-image: url("../img/icon-cross.svg");
 }
 .nav-menu__checkbox:checked ~ .nav {
-  display: block;
+ display: block;
 }
 
 
@@ -257,15 +257,13 @@
   flex-wrap: wrap;
   background: rgba(255,255,255, 0.7);
 }
-.block-7info__info{
-	display: flex;
-	justify-content: center;
-}
+
 
 .block-7info{
   display: flex;
   flex-direction: column;
   justify-content: center;
+  text-align: center;
   flex-wrap: wrap;
   max-width: 320px;
   border: 1px solid black;
